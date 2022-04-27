@@ -13,4 +13,10 @@ using HotelApp.Models;
         }
 
         public DbSet<HotelApp.Models.Cliente> Cliente { get; set; }
+
+        public DbSet<HotelApp.Models.Quarto> Quarto { get; set; }
+
+        public DbSet<HotelApp.Models.TipoQuarto> TipoQuarto { get; set; }
+
+        public DbSet<HotelApp.Models.Reserva> Reserva { get; set; }
     }

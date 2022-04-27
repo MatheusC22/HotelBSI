@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\HotelApp.csproj",
+  "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\HotelApp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,73 +15619,98 @@
   "RootNamespace": "HotelApp",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\Clientes\\Details.cshtml",
-      "TargetPath": "Views\\Clientes\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\HelloWorld\\Index.cshtml",
-      "TargetPath": "Views\\HelloWorld\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\Clientes\\Edit.cshtml",
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Clientes\\Edit.cshtml",
       "TargetPath": "Views\\Clientes\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Quartos\\Details.cshtml",
+      "TargetPath": "Views\\Quartos\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Clientes\\Delete.cshtml",
+      "TargetPath": "Views\\Clientes\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Quartos\\Index.cshtml",
+      "TargetPath": "Views\\Quartos\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\HelloWorld\\Index.cshtml",
+      "TargetPath": "Views\\HelloWorld\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\HelloWorld\\Welcome.cshtml",
-      "TargetPath": "Views\\HelloWorld\\Welcome.cshtml",
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Quartos\\Edit.cshtml",
+      "TargetPath": "Views\\Quartos\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Quartos\\Create.cshtml",
+      "TargetPath": "Views\\Quartos\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Quartos\\Delete.cshtml",
+      "TargetPath": "Views\\Quartos\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Clientes\\Details.cshtml",
+      "TargetPath": "Views\\Clientes\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\Clientes\\Index.cshtml",
-      "TargetPath": "Views\\Clientes\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\Clientes\\Create.cshtml",
-      "TargetPath": "Views\\Clientes\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Laboratorio\\hotelbsi\\Views\\Clientes\\Delete.cshtml",
-      "TargetPath": "Views\\Clientes\\Delete.cshtml",
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Clientes\\Index.cshtml",
+      "TargetPath": "Views\\Clientes\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\Clientes\\Create.cshtml",
+      "TargetPath": "Views\\Clientes\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Laboratorio\\HotelApp\\Views\\HelloWorld\\Welcome.cshtml",
+      "TargetPath": "Views\\HelloWorld\\Welcome.cshtml",
       "FileKind": "mvc"
     }
   ],

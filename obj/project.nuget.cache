@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f5/ti+W9ucoj3nh3bTYj3y+pcZPZ+MQN/EQ2pkxIQk+RQJgWD2VSyOpTsXkfsDvDowjYybQnwucJaQoNarjMlw==",
+  "dgSpecHash": "qP7VQhR7tve8VFRtU5XVti0pTNhF0eXIqRO4iM3vK/8o5zc3vum8lyHMQii10tFeblrGduhw9STUcfHuSwUhJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Laboratorio\\hotelbsi\\HotelApp.csproj",
+  "projectFilePath": "C:\\Users\\Laboratorio\\HotelApp\\HotelApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Laboratorio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Laboratorio\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

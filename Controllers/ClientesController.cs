@@ -19,9 +19,29 @@ namespace HotelApp.Controllers
         }
 
         // GET: Clientes
-        public async Task<IActionResult> Index()
+         public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Cliente.ToListAsync());
+            var clientes = from c in _context.Cliente
+                select c;
+
+            if(!String.IsNullOrEmpty(searchString))
+            {
+               clientes = clientes.Where(
+                   s => s.Nome.Contains(searchString)|| 
+                        s.Email.Contains(searchString) ||
+                        s.Cpf.Contains(searchString) ||
+                        s.Telefone.Contains(searchString)
+                );
+               
+            }
+                        
+            return View(await clientes.ToListAsync());
+        }
+
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+            return "From POST de Index: filter: "+ searchString;
         }
 
         // GET: Clientes/Details/5

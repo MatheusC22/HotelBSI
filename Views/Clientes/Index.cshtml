@@ -9,6 +9,26 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form id="formPesquisa" asp-controller="Clientes" asp-action="Index" method="GET">
+    <p>
+        Nome: <input id="ss" type="text" name="SearchString" oninput="submitForm();" />
+        <input type="submit" value="Filtrar" />
+    </p>
+</form>
+
+<script type="text/javascript">
+    function submitForm() {
+        //var ss = document.getElementById("ss");
+        //string search = ss.value;
+        document.forms["formPesquisa"].submit();
+        //ss.value = search;
+        //alert(search);
+        
+
+        
+    }
+</script>
+
 <table class="table">
     <thead>
         <tr>
@@ -19,19 +39,10 @@
                 @Html.DisplayNameFor(model => model.Cpf)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Rg)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Endereco)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Telefone)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DtNascimento)
             </th>
             <th></th>
         </tr>
@@ -46,24 +57,15 @@
                 @Html.DisplayFor(modelItem => item.Cpf)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Rg)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Endereco)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Telefone)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DtNascimento)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id"><i class="fas fa-edit"></i></a> |
+                <a asp-action="Details" asp-route-id="@item.Id"><i class="fas fa-info"></i></a> |
+                <a asp-action="Delete" asp-route-id="@item.Id"><i class="fas fa-trash"></i></a>
             </td>
         </tr>
 }
