@@ -10,8 +10,9 @@ namespace HotelApp.Models
         public string Descricao  {get; set;}
         public int TipoQuartoID  {get; set;}
         public string Localizacao {get; set;}
-        public string StatusQuarto {get; set;}
+        public int StatusQuartoID {get; set;}
 
         public virtual TipoQuarto TipoQuarto {get; set;}
+        public virtual StatusQuarto StatusQuarto {get; set;}
     }
 }

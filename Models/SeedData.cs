@@ -61,6 +61,20 @@ namespace HotelApp.Models
                     }
                 );
                 }
+
+                if(context.StatusQuarto.Any()){
+                    // Não faço nada
+                }else{
+                    context.StatusQuarto.AddRange(
+                        new StatusQuarto
+                        {
+                            StatusQuartoID = 1,
+                            Nome = "Disponível",
+                            Descricao = "Quarto Disponível",
+                        }
+                    );
+                }
+
                 if(context.Quarto.Any()){
                     // Não faço nada
                 }else{
@@ -71,7 +85,7 @@ namespace HotelApp.Models
                             Descricao = "Quarto Standard Casal",
                             TipoQuartoID = 1,
                             Localizacao = "Primeiro Andar",
-                            StatusQuarto = "Livre",
+                            StatusQuartoID = 1,
                         },
                         new Quarto
                         {
@@ -79,7 +93,7 @@ namespace HotelApp.Models
                             Descricao = "Quarto Deluxe",
                             TipoQuartoID = 2,
                             Localizacao = "Cobertura",
-                            StatusQuarto = "Livre",
+                            StatusQuartoID = 1,
                         }
 
                     );

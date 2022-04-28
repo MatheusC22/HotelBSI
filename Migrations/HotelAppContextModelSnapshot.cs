@@ -62,13 +62,15 @@ namespace HotelApp.Migrations
                     b.Property<int>("Numero")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("StatusQuarto")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("StatusQuartoID")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("TipoQuartoID")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("StatusQuartoID");
 
                     b.HasIndex("TipoQuartoID");
 
@@ -96,13 +98,52 @@ namespace HotelApp.Migrations
                     b.Property<string>("Status")
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("StatusReservaID")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ClienteID");
 
                     b.HasIndex("QuartoID");
 
+                    b.HasIndex("StatusReservaID");
+
                     b.ToTable("Reserva");
+                });
+
+            modelBuilder.Entity("HotelApp.Models.StatusQuarto", b =>
+                {
+                    b.Property<int>("StatusQuartoID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("StatusQuartoID");
+
+                    b.ToTable("StatusQuarto");
+                });
+
+            modelBuilder.Entity("HotelApp.Models.StatusReserva", b =>
+                {
+                    b.Property<int>("StatusReservaID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("StatusReservaID");
+
+                    b.ToTable("StatusReserva");
                 });
 
             modelBuilder.Entity("HotelApp.Models.TipoQuarto", b =>
@@ -127,11 +168,19 @@ namespace HotelApp.Migrations
 
             modelBuilder.Entity("HotelApp.Models.Quarto", b =>
                 {
+                    b.HasOne("HotelApp.Models.StatusQuarto", "StatusQuarto")
+                        .WithMany("Quartos")
+                        .HasForeignKey("StatusQuartoID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("HotelApp.Models.TipoQuarto", "TipoQuarto")
                         .WithMany("Quartos")
                         .HasForeignKey("TipoQuartoID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("StatusQuarto");
 
                     b.Navigation("TipoQuarto");
                 });
@@ -150,9 +199,23 @@ namespace HotelApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("HotelApp.Models.StatusReserva", null)
+                        .WithMany("Reservas")
+                        .HasForeignKey("StatusReservaID");
+
                     b.Navigation("Cliente");
 
                     b.Navigation("Quarto");
+                });
+
+            modelBuilder.Entity("HotelApp.Models.StatusQuarto", b =>
+                {
+                    b.Navigation("Quartos");
+                });
+
+            modelBuilder.Entity("HotelApp.Models.StatusReserva", b =>
+                {
+                    b.Navigation("Reservas");
                 });
 
             modelBuilder.Entity("HotelApp.Models.TipoQuarto", b =>

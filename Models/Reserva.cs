@@ -13,11 +13,12 @@ namespace HotelApp.Models
         public DateTime DataCheckIn {get; set;}
         [DataType(DataType.Date)]
         public DateTime DataCheckOut {get; set;}
-        public string Status {get; set;}
+        public int StatusReservaID {get; set;}
 
         //Relacionamentos
         public virtual Cliente Cliente {get; set;}
         public virtual Quarto Quarto {get; set;}
+        public virtual StatusReserva StatusReserva {get; set;}
 
 
     }

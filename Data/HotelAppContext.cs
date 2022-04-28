@@ -18,5 +18,9 @@ using HotelApp.Models;
 
         public DbSet<HotelApp.Models.TipoQuarto> TipoQuarto { get; set; }
 
+        public DbSet<HotelApp.Models.StatusQuarto> StatusQuarto { get; set; }
+
+        public DbSet<HotelApp.Models.StatusReserva> StatusReserva { get; set; }
+
         public DbSet<HotelApp.Models.Reserva> Reserva { get; set; }
     }

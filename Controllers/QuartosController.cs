@@ -49,6 +49,7 @@ namespace HotelApp.Controllers
         public IActionResult Create()
         {
             ViewData["TipoQuartosID"] = new SelectList(_context.TipoQuarto, "TipoQuartoID","Nome");
+            ViewData["StatusQuartosID"] = new SelectList(_context.StatusQuarto, "StatusQuartoID","Nome");
             return View();
         }
 
@@ -57,7 +58,7 @@ namespace HotelApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Numero,Descricao,TipoQuartoID,Localizacao,StatusQuarto")] Quarto quarto)
+        public async Task<IActionResult> Create([Bind("Id,Numero,Descricao,TipoQuartoID,Localizacao,StatusQuartoID")] Quarto quarto)
         {
             if (ModelState.IsValid)
             {
@@ -82,6 +83,7 @@ namespace HotelApp.Controllers
                 return NotFound();
             }
             ViewData["TipoQuartosID"] = new SelectList(_context.TipoQuarto, "TipoQuartoID","Nome");
+            ViewData["StatusQuartosID"] = new SelectList(_context.StatusQuarto, "StatusQuartoID","Nome");
             return View(quarto);
         }
 
@@ -90,7 +92,7 @@ namespace HotelApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Numero,Descricao,TipoQuartoID,Localizacao,StatusQuarto")] Quarto quarto)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Numero,Descricao,TipoQuartoID,Localizacao,StatusQuartoID")] Quarto quarto)
         {
             if (id != quarto.Id)
             {

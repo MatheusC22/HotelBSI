@@ -50,6 +50,7 @@ namespace HotelApp.Controllers
         {
             ViewData["ClienteID"] = new SelectList(_context.Cliente, "Id", "Nome");
             ViewData["QuartoID"] = new SelectList(_context.Quarto, "Id", "Numero");
+            ViewData["StatusReservasID"] = new SelectList(_context.StatusReserva, "StatusReservaID", "Nome");
             return View();
         }
 
@@ -68,6 +69,7 @@ namespace HotelApp.Controllers
             }
             ViewData["ClienteID"] = new SelectList(_context.Cliente, "Id", "Nome", reserva.ClienteID);
             ViewData["QuartoID"] = new SelectList(_context.Quarto, "Id", "Numero", reserva.QuartoID);
+            ViewData["StatusReservasID"] = new SelectList(_context.StatusReserva, "StatusReservaID", "Nome");
             return View(reserva);
         }
 
