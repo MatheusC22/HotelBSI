@@ -46,7 +46,7 @@
                 @Html.DisplayFor(modelItem => item.Localizacao)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.StatusQuarto)
+                @Html.DisplayFor(modelItem => item.StatusQuarto.Nome)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

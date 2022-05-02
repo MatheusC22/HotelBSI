@@ -22,7 +22,7 @@ namespace HotelApp.Controllers
         public async Task<IActionResult> Index()
         {
             var HotelAppContext = _context.Quarto
-                .Include(r => r.TipoQuarto);
+                .Include(r => r.TipoQuarto).Include(r => r.StatusQuarto);
             return View(await HotelAppContext.ToListAsync());
         }
 
@@ -36,6 +36,7 @@ namespace HotelApp.Controllers
 
             var quarto = await _context.Quarto
                 .Include(r => r.TipoQuarto)
+                .Include(r => r.StatusQuarto)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (quarto == null)
             {

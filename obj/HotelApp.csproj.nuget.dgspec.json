@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/dsin/Dev/Univem/HotelApp/HotelApp.csproj": {}
+    "C:\\Users\\matheus\\desktop\\hotelappbsi\\HotelApp.csproj": {}
   },
   "projects": {
-    "/home/dsin/Dev/Univem/HotelApp/HotelApp.csproj": {
+    "C:\\Users\\matheus\\desktop\\hotelappbsi\\HotelApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dsin/Dev/Univem/HotelApp/HotelApp.csproj",
+        "projectUniqueName": "C:\\Users\\matheus\\desktop\\hotelappbsi\\HotelApp.csproj",
         "projectName": "HotelApp",
-        "projectPath": "/home/dsin/Dev/Univem/HotelApp/HotelApp.csproj",
-        "packagesPath": "/home/dsin/.nuget/packages/",
-        "outputPath": "/home/dsin/Dev/Univem/HotelApp/obj/",
+        "projectPath": "C:\\Users\\matheus\\desktop\\hotelappbsi\\HotelApp.csproj",
+        "packagesPath": "C:\\Users\\matheus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matheus\\desktop\\hotelappbsi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/dsin/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
