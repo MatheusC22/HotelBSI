@@ -34,8 +34,8 @@
                 <span asp-validation-for="Localizacao" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="StatusQuarto" class="control-label"></label>
-                <input asp-for="StatusQuarto" class="form-control" />
+                <label asp-for="StatusQuartoID" class="control-label"></label>
+                <select asp-for="StatusQuartoID" class="form-control" asp-items="ViewBag.StatusQuartosID"></select>
                 <span asp-validation-for="StatusQuarto" class="text-danger"></span>
             </div>
             <div class="form-group">

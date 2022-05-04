@@ -87,6 +87,7 @@ namespace HotelApp.Controllers
             {
                 return NotFound();
             }
+            ViewData["StatusReservaID"] = new SelectList(_context.StatusReserva, "StatusReservaID", "Nome", reserva.StatusReservaID);
             ViewData["ClienteID"] = new SelectList(_context.Cliente, "Id", "Nome", reserva.ClienteID);
             ViewData["QuartoID"] = new SelectList(_context.Quarto, "Id", "Numero", reserva.QuartoID);
             return View(reserva);
@@ -124,6 +125,7 @@ namespace HotelApp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["StatusReservaID"] = new SelectList(_context.StatusReserva, "StatusReservaID", "Nome", reserva.StatusReservaID);
             ViewData["ClienteID"] = new SelectList(_context.Cliente, "Id", "Nome", reserva.ClienteID);
             ViewData["QuartoID"] = new SelectList(_context.Quarto, "Id", "Numero", reserva.QuartoID);
             return View(reserva);
@@ -140,6 +142,7 @@ namespace HotelApp.Controllers
             var reserva = await _context.Reserva
                 .Include(r => r.Cliente)
                 .Include(r => r.Quarto)
+                .Include(r => r.StatusReserva)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (reserva == null)
             {

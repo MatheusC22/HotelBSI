@@ -132,7 +132,7 @@ namespace HotelApp.Controllers
             }
 
             var quarto = await _context.Quarto
-                .Include(r => r.TipoQuarto)
+                .Include(r => r.TipoQuarto).Include(r => r.StatusQuarto)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (quarto == null)
             {
