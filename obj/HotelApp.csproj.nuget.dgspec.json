@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matheus\\Desktop\\HotelBSI\\HotelApp.csproj": {}
+    "C:\\Users\\matheus\\desktop\\hotelbsi\\HotelApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matheus\\Desktop\\HotelBSI\\HotelApp.csproj": {
+    "C:\\Users\\matheus\\desktop\\hotelbsi\\HotelApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matheus\\Desktop\\HotelBSI\\HotelApp.csproj",
+        "projectUniqueName": "C:\\Users\\matheus\\desktop\\hotelbsi\\HotelApp.csproj",
         "projectName": "HotelApp",
-        "projectPath": "C:\\Users\\matheus\\Desktop\\HotelBSI\\HotelApp.csproj",
+        "projectPath": "C:\\Users\\matheus\\desktop\\hotelbsi\\HotelApp.csproj",
         "packagesPath": "C:\\Users\\matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matheus\\Desktop\\HotelBSI\\obj\\",
+        "outputPath": "C:\\Users\\matheus\\desktop\\hotelbsi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
